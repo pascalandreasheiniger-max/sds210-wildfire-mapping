@@ -1,0 +1,12 @@
+name: wildfire-pascal-heiniger
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - pandas
+  - geopandas
+  - folium
+  - requests
+  - pip
