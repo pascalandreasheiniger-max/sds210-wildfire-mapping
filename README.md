@@ -23,7 +23,9 @@ https://firms.modaps.eosdis.nasa.gov/api/map_key
 
 
 
+
 ## How to use the project
+
 
 ### 1. Clone the repository
 
@@ -32,6 +34,7 @@ Open the terminal and clone the repository:
 ```bash
 git clone https://github.com/pascalandreasheiniger-max/sds210-wildfire-mapping.git
 ```
+
 
 
 ### 2. Open the project folder
@@ -43,6 +46,7 @@ cd sds210-wildfire-mapping
 ```
 
 
+
 ### 3. Install the required packages
 
 Install all required Python libraries:
@@ -50,6 +54,7 @@ Install all required Python libraries:
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
 ### 4. Create your config file
@@ -74,7 +79,8 @@ config.py
 
 
 
-### 6. Open the notebook
+
+### 5. Open the notebook
 
 Open:
 
@@ -84,13 +90,15 @@ notebooks/wildfire_mapping.ipynb
 
 
 
-### 7. Run the notebook
+
+### 6. Run the notebook
 
 Run all notebook cells from top to bottom.
 
 
 
-### 8. API mode and offline mode
+
+### 7. API mode and offline mode
 
 Set:
 
@@ -107,6 +115,8 @@ USE_API = False
 ```
 
 to use the previously saved raw wildfire dataset in offline mode without sending a new API request.
+
+
 
 
 ## Workflow
@@ -126,6 +136,8 @@ The project follows this workflow:
 6. Save the cleaned dataset, analysis outputs and the final interactive wildfire map.
 
 
+
+
 ## Project structure
 
 ```text
@@ -143,9 +155,10 @@ sds210-wildfire-mapping/
 ├── requirements.txt
 ├── .gitignore
 ├── config_template.py
-├── config.py
 └── README.md
 ```
+
+
 
 
 ## Outputs
