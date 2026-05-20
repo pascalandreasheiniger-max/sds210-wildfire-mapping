@@ -6,13 +6,9 @@ This project analyzes recent wildfire detections in Europe using data from the N
 
 The workflow includes downloading raw wildfire data, cleaning and analyzing the dataset, identifying the strongest wildfire detections and creating an interactive Folium map.
 
-
-
 ## Research question
 
 Where are recent wildfires in Europe occurring, and how intense and reliable are the detected wildfire events?
-
-
 
 ## Data source
 
@@ -21,11 +17,7 @@ The wildfire data is downloaded from the NASA FIRMS API using the VIIRS SNPP NRT
 Please get your own API key to access the API:
 https://firms.modaps.eosdis.nasa.gov/api/map_key
 
-
-
-
 ## How to use the project
-
 
 ### 1. Clone the repository
 
@@ -35,8 +27,6 @@ Open the terminal and clone the repository:
 git clone https://github.com/pascalandreasheiniger-max/sds210-wildfire-mapping.git
 ```
 
-
-
 ### 2. Open the project folder
 
 Navigate into the project folder:
@@ -45,17 +35,14 @@ Navigate into the project folder:
 cd sds210-wildfire-mapping
 ```
 
-
-
 ### 3. Install the required packages
 
-Install all required Python libraries:
+Create and activate the conda environment:
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate wildfire-pascal-heiniger
 ```
-
-
 
 ### 4. Create your config file
 
@@ -77,9 +64,6 @@ Then rename the file to:
 config.py
 ```
 
-
-
-
 ### 5. Open the notebook
 
 Open:
@@ -88,15 +72,9 @@ Open:
 notebooks/wildfire_mapping.ipynb
 ```
 
-
-
-
 ### 6. Run the notebook
 
 Run all notebook cells from top to bottom.
-
-
-
 
 ### 7. API mode and offline mode
 
@@ -116,9 +94,6 @@ USE_API = False
 
 to use the previously saved raw wildfire dataset in offline mode without sending a new API request.
 
-
-
-
 ## Workflow
 
 The project follows this workflow:
@@ -135,9 +110,6 @@ The project follows this workflow:
 
 6. Save the cleaned dataset, analysis outputs and the final interactive wildfire map.
 
-
-
-
 ## Project structure
 
 ```text
@@ -152,14 +124,11 @@ sds210-wildfire-mapping/
 │
 ├── outputs/               # Final outputs and interactive map
 │
-├── requirements.txt
+├── environment.yml
 ├── .gitignore
 ├── config_template.py
 └── README.md
 ```
-
-
-
 
 ## Outputs
 
@@ -168,8 +137,6 @@ The project creates several output files:
 - cleaned wildfire dataset (folder processed)
 - top wildfire detections CSV (folder outputs)
 - interactive wildfire map as HTML file (folder outputs)
-
-
 
 ## Author
 
