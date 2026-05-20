@@ -9,4 +9,6 @@ dependencies:
   - geopandas
   - folium
   - requests
+  - geopy
+  - matplotlib
   - pip
